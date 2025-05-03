@@ -1,0 +1,57 @@
+.region-tab {
+  color: #555;
+  border: none;
+  background: none;
+  position: relative;
+  font-size: 14px;
+}
+
+.region-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background-color: black;
+}
+
+.region-tab:hover {
+  text-decoration: none;
+}
+
+.region-scroll {
+  max-width: 100%;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.region-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.region-scroll::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+
+.region-tab {
+  min-width: max-content;
+}
+
+/* .region-btn {
+    border: 1px solid #198754; 
+    color: black;
+    background-color: #dee2e68f;
+  } */
+.region-outline {
+  border-color: black;
+}
+
+.selected-region {
+  background-color: #989a9b8f;
+  /* light gray */
+  color: black;
+  border-color: #9ea0a18f;
+}
